@@ -1,7 +1,7 @@
 # Load Packages and get the Data
 library(data.table)
 library(reshape2)
-
+path <- getwd()
 # Load activity labels + features
 activityLabels <- fread(file.path(path, "UCI HAR Dataset/activity_labels.txt")
                         , col.names = c("classLabels", "activityName"))
